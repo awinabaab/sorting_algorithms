@@ -26,11 +26,8 @@ void bubble_sort(int *array, size_t size)
 				swap_element = array[idx];
 				array[idx] = array[idx + 1];
 				array[idx + 1] = swap_element;
-				changes++;
 				print_array(array, size);
 			}
 		}
-		if (changes == 0)
-			break;
 	}
 }
